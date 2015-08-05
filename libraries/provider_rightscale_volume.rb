@@ -338,6 +338,9 @@ class Chef
         # If controller type is provided, use it.
         params[:volume][:controller_type] = options[:controller_type] if options[:controller_type]
 
+        # If encrytion option is provided, use it.
+        params[:volume][:encrypted] = options[:encrypted] if options[:encrypted]
+
         # If snapshot_id is provided in the arguments, find the snapshot
         # and create the volume from the snapshot found
         unless snapshot_id.nil?
@@ -962,7 +965,6 @@ class Chef
         end
 
       end
-
     end
   end
 end

@@ -3,6 +3,11 @@ rightscale_volume Cookbook CHANGELOG
 
 This file is used to list changes made in each version of the rightscale_volume cookbook.
 
+v1.2.11
+-------
+
+- adding encryption option if cloud supports it.
+
 v1.2.10
 -------
 
